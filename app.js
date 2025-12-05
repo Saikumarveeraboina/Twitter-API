@@ -3,7 +3,6 @@ const app = express();
 
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-
 app.use(express.json());
 
 const { open } = require("sqlite");
@@ -364,3 +363,4 @@ app.delete("/tweets/:tweetId", authenticateToken, async (request, response) => {
 
 //Exporting Express Instance
 module.exports = app;
+
