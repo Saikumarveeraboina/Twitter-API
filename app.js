@@ -1,6 +1,5 @@
 const express = require("express")
-const app = express();
-
+const app = express(); 
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 app.use(express.json());
@@ -20,7 +19,6 @@ const initializeDBAndServer = async () => {
     });
     app.listen(3000, () => {
 
-      
       console.log("Server is Running at http://localhost:3000");
     });
   } catch (e) {
@@ -365,6 +363,7 @@ app.delete("/tweets/:tweetId", authenticateToken, async (request, response) => {
 
 //Exporting Express Instance
 module.exports = app;
+
 
 
 
