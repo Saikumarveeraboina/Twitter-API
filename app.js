@@ -54,7 +54,6 @@ const authenticateToken = (request, response, next) => {
     });
   }
 };
-
 //Register User API-1
 app.post("/register", async (request, response) => {
   const { username, password, name, gender } = request.body;
@@ -108,7 +107,7 @@ app.post("/login", async (request, response) => {
       response.send("Invalid password");
     }
   }
-});
+});  
 //User Tweets Feed API-3
 app.get("/user/tweets/feed", authenticateToken, async (request, response) => {
   const { payload } = request;
@@ -363,6 +362,7 @@ app.delete("/tweets/:tweetId", authenticateToken, async (request, response) => {
 
 //Exporting Express Instance
 module.exports = app;
+
 
 
 
