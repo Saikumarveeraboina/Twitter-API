@@ -36,6 +36,7 @@ const authenticateToken = (request, response, next) => {
   if (authHeader !== undefined) {
     jwtToken = authHeader.split(" ")[1];
   }
+  
   if (jwtToken === undefined) {
     response.status(401);
     response.send("Invalid JWT Token");
@@ -361,6 +362,7 @@ app.delete("/tweets/:tweetId", authenticateToken, async (request, response) => {
 
 //Exporting Express Instance
 module.exports = app;
+
 
 
 
