@@ -9,7 +9,6 @@ const sqlite3 = require("sqlite3");
 
 const path = require("path");
 const dbPath = path.join(__dirname, "twitterClone.db");
-
 let db = null;
 const initializeDBAndServer = async () => {
   try {
@@ -362,6 +361,7 @@ app.delete("/tweets/:tweetId", authenticateToken, async (request, response) => {
 
 //Exporting Express Instance
 module.exports = app;
+
 
 
 
