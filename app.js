@@ -11,6 +11,7 @@ const path = require("path");
 const dbPath = path.join(__dirname, "twitterClone.db");
 let db = null;
 const initializeDBAndServer = async () => {
+  
   try {
     db = await open({
       filename: dbPath,
@@ -361,6 +362,7 @@ app.delete("/tweets/:tweetId", authenticateToken, async (request, response) => {
 
 //Exporting Express Instance
 module.exports = app;
+
 
 
 
