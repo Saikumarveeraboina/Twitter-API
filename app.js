@@ -107,6 +107,7 @@ app.post("/login", async (request, response) => {
     }
   }
 });  
+
 //User Tweets Feed API-3
 app.get("/user/tweets/feed", authenticateToken, async (request, response) => {
   const { payload } = request;
@@ -147,6 +148,7 @@ app.get("/user/following", authenticateToken, async (request, response) => {
   const userFollowsArray = await db.all(userFollowsQuery);
   response.send(userFollowsArray);
 });
+
 
 //Get User Names Followers API-5
 app.get("/user/followers", authenticateToken, async (request, response) => {
@@ -361,6 +363,7 @@ app.delete("/tweets/:tweetId", authenticateToken, async (request, response) => {
 
 //Exporting Express Instance
 module.exports = app;
+
 
 
 
