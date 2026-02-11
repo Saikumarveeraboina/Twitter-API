@@ -26,6 +26,7 @@ const initializeDBAndServer = async () => {
 };
 
 initializeDBAndServer();
+
 // JwtToken Verification
 const authenticateToken = (request, response, next) => {
   const { tweet } = request.body;
@@ -363,6 +364,7 @@ app.delete("/tweets/:tweetId", authenticateToken, async (request, response) => {
 
 //Exporting Express Instance
 module.exports = app;
+
 
 
 
