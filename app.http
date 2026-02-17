@@ -14,10 +14,7 @@ Content-Type: application/json
     "username": "JoeBiden",
     "password": "biden@123"
 }
-
 ### API-2
-
-
 GET  http://localhost:3000/user/tweets/feed
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJuYW1lIjoiSm9lIEJpZGVuIiwidXNlcm5hbWUiOiJKb2VCaWRlbiIsInBhc3N3b3JkIjoiJDJiJDEwJDJhcmU2QmE2OW9pL0NhaTRhVC9WTS50N0FPN1RzUXgvLk9nei43WEc0cWp1TWlsMHY4MGFxIiwiZ2VuZGVyIjoibWFsZSIsImlhdCI6MTY3NzEzNTUzMX0.gvLbJW1A97iQXUOOOY8lYa8sYrQ4MBtTLut0K8xqgEc
 
@@ -59,6 +56,7 @@ Content-Type: application/json
 DELETE  http://localhost:3000/tweets/1
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJuYW1lIjoiSm9lIEJpZGVuIiwidXNlcm5hbWUiOiJKb2VCaWRlbiIsInBhc3N3b3JkIjoiJDJiJDEwJDJhcmU2QmE2OW9pL0NhaTRhVC9WTS50N0FPN1RzUXgvLk9nei43WEc0cWp1TWlsMHY4MGFxIiwiZ2VuZGVyIjoibWFsZSIsImlhdCI6MTY3NzEzNTUzMX0.gvLbJW1A97iQXUOOOY8lYa8sYrQ4MBtTLut0K8xqgEc
 ### API-11
+
 
 
 
