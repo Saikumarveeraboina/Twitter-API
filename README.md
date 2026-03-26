@@ -4,6 +4,7 @@ Given an `app.js` file and a database file `twitterClone.db` consisting of five 
 
 Write APIs to perform operations on the tables `user`, `follower`, `tweet`, `reply`, and `like` containing the following columns,
 
+\
 **User Table**
 
 | Column   | Type    |
